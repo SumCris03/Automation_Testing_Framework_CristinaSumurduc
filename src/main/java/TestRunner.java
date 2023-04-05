@@ -1,29 +1,24 @@
 import Managers.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import pageObjects.HomePage;
+import pageObjects.RegisterPage;
 
 import static java.lang.Thread.sleep;
 
 public class TestRunner {
-    public static void main(String[] args ) {
+    public static void main(String[] args ) throws InterruptedException {
         WebDriverManager webDriverManager=new WebDriverManager ("CHROME");
         webDriverManager.getDriver().get("https://demo.opencart.com/");
 
-        WebElement myAcountButton = webDriverManager.getDriver().findElement(By.xpath("//*[@id=\"carousel-banner-0\"]/div[2]/div[2]"));
-        myAcountButton.click();
+        HomePage homePage= new HomePage(webDriverManager.getDriver());
+        homePage.navigateToRegisterPage();
 
-        WebElement registerButton = webDriverManager.getDriver().findElement(By.xpath("//*[@id=\"carousel-banner-0\"]/button[2]"));
-        registerButton.click();
+        RegisterPage registerPage = new RegisterPage(webDriverManager.getDriver());
+        registerPage.fillInTheRegisterForm("Maria","Palea", "maria.palea@gmail.md","123456789");
 
+        Thread.sleep(1000000);
 
-        WebElement firstNameInput =webDriverManager.getDriver().findElement(By.name("common-home-firstNameInput"));
-        firstNameInput.sendKeys("First Text Input");
-
-        try {
-            sleep(2500);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
 
 
         webDriverManager.getDriver().close();
