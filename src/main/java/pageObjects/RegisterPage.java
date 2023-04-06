@@ -38,7 +38,10 @@ public class RegisterPage extends Page {
         emailInput.sendKeys(email);
         passwordInput.sendKeys(password);
 
-
+    }
+    public boolean allTheElementsAreDisplayed(){
+        return firstNameInput.isDisplayed() && lastNameInput.isDisplayed() && emailInput.isDisplayed()
+                && passwordInput.isDisplayed();
     }
 
 
