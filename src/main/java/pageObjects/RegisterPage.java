@@ -1,16 +1,16 @@
 package pageObjects;
 
-import net.bytebuddy.implementation.bind.annotation.Super;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class RegisterPage extends Page {
 
-    public RegisterPage(WebDriver driver){
+    public RegisterPage(WebDriver driver) {
         super(driver);
     }
-      @FindBy(id = "input-firstname")
+
+    @FindBy(id = "input-firstname")
     private WebElement firstNameInput;
 
     @FindBy(id = "input-lastname")
@@ -23,23 +23,21 @@ public class RegisterPage extends Page {
     private WebElement passwordInput;
 
 
-
-
-
     @FindBy(xpath = "//*[@id=\"form-register\"]/div/div/div/input")
     private WebElement privacyCheckBox;
 
     @FindBy(xpath = "//*[@id=\"form-register\"]/div/div/button")
     private WebElement ContinueButton;
 
-    public void fillInTheRegisterForm(String firstName,String lastName, String email, String password){
+    public void fillInTheRegisterForm(String firstName, String lastName, String email, String password) {
         firstNameInput.sendKeys(firstName);
         lastNameInput.sendKeys(lastName);
         emailInput.sendKeys(email);
         passwordInput.sendKeys(password);
 
     }
-    public boolean allTheElementsAreDisplayed(){
+
+    public boolean allTheElementsAreDisplayed() {
         return firstNameInput.isDisplayed() && lastNameInput.isDisplayed() && emailInput.isDisplayed()
                 && passwordInput.isDisplayed();
     }

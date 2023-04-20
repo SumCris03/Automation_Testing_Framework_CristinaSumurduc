@@ -7,14 +7,15 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class WebDriverManager {
 
-    public WebDriverManager(String webDriverType){
-        this.WebDriverType=webDriverType;
+    public WebDriverManager(String webDriverType) {
+        this.WebDriverType = webDriverType;
 
     }
-    private WebDriver driver;
-    private String  WebDriverType;
 
-    private WebDriver createDriver(){
+    private WebDriver driver;
+    private String WebDriverType;
+
+    private WebDriver createDriver() {
         switch (WebDriverType) {
             case "CHROME":
                 ChromeOptions chromeOptions = new ChromeOptions();
@@ -24,8 +25,8 @@ public class WebDriverManager {
                 break;
 
             case "FIREFOX":
-                System.setProperty("WebDriver.geckodriver","src/main/resources/drivers/geckodriver.exe");
-                        driver= new FirefoxDriver();
+                System.setProperty("WebDriver.geckodriver", "src/main/resources/drivers/geckodriver.exe");
+                driver = new FirefoxDriver();
                 break;
             default:
                 System.out.println("optiunea de web driver nu este valabila, Mai incearca");
@@ -35,16 +36,22 @@ public class WebDriverManager {
 
     }
 
+    public boolean contains(String urlKeyWord) {
+        return driver.getCurrentUrl().contains(urlKeyWord);
+    }
+
+
     public WebDriver getDriver() {
-        if (driver ==null){
+        if (driver == null) {
             createDriver();
 
         }
         return driver;
 
     }
-    public void closeDriver(){
-        if(driver !=null){
+
+    public void closeDriver() {
+        if (driver != null) {
             driver.close();
             System.out.println("Driver-ul a fost inchis");
         }

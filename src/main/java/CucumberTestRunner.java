@@ -12,7 +12,7 @@ import org.junit.runner.Runner;
   features = "src/main/java/features",
         glue = "stepDefinition",
         snippets = SnippetType.CAMELCASE,
-        tags ={},
+        tags ={"@run"},
         plugin = {"pretty", "html:target/cucumber-reports"}
 )
 

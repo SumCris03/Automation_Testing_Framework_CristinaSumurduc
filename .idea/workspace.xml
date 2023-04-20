@@ -4,14 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5baca06-e676-4e11-99b9-f91dbce64c83" name="Changes" comment="sarcina 17-all">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ContextManagers/TestContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/CucumberTestRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/features/Register.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/stepDefinitions/Hooks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/stepDefinitions/RegisterSteps.java" afterDir="false" />
+    <list default="true" id="b5baca06-e676-4e11-99b9-f91dbce64c83" name="Changes" comment="sarcina 19-cucumber_configuration">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/stepDefinitions/homePageSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Managers/WebDriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Managers/WebDriverManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/features/Register.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/features/Register.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/RegisterPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/stepDefinitions/RegisterSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/stepDefinitions/RegisterSteps.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +33,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="webdriver-implementation" />
+        <entry key="$PROJECT_DIR$" value="Junit" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -65,23 +67,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/XiaomiPRO/OneDrive - Technical University of Moldova/Desktop/proiectele mele/Automation_Testing_Framework_CristinaSumurduc/Automation_Testing_Framework/target/generated-sources/annotations",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/XiaomiPRO/OneDrive - Technical University of Moldova/Desktop/proiectele mele/Automation_Testing_Framework_CristinaSumurduc/Automation_Testing_Framework/target/generated-sources/annotations&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "PLAIN_TEXT"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;PLAIN_TEXT&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\XiaomiPRO\OneDrive - Technical University of Moldova\Desktop\proiectele mele\Automation_Testing_Framework_CristinaSumurduc\Automation_Testing_Framework\src\main\resources\drivers" />
@@ -226,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680723315445</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="sarcina 19-cucumber_configuration">
+      <created>1681990055602</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1681990055602</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -247,6 +256,7 @@
     <MESSAGE value="Sarcina 16" />
     <MESSAGE value="sarcina 17" />
     <MESSAGE value="sarcina 17-all" />
-    <option name="LAST_COMMIT_MESSAGE" value="sarcina 17-all" />
+    <MESSAGE value="sarcina 19-cucumber_configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="sarcina 19-cucumber_configuration" />
   </component>
 </project>
